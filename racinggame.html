@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="snap.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
+	<title>Minimum Bootstrap HTML Skeleton</title>
+
+	<!--  -->
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<div class="container-fluid blue">
+
+		<div class="row">
+			<header class="font">
+				<h1>Racing</h1>
+				<h2>Can you beat the computer? First pick a racer...</h2>
+			</header>
+		</div>
+		<div class="row">
+
+			<ul class="transport">
+				<li class="icons" type="ambulance">
+					<i class="fa fa-ambulance fa-5x"></i>
+				</li>
+				<li class="icons" type="plane">
+					<i class="fa fa-plane fa-5x"></i>
+				</li>
+				<li class="icons" type="rocket">
+					<i class="fa fa-rocket fa-5x"></i>
+				</li>
+				<li class="icons" type="car">
+					<i class="fa fa-car fa-5x"></i>
+				</li>
+				<li class="icons" type="bicycle">
+					<i class="fa fa-bicycle fa-5x"></i>
+				</li>
+			</ul>
+		</div>
+
+		<div class="buttonarea row">
+			<h3 class="font">Choose what side of the keyboard you want to use..<br>
+				(right is better for right handed folk, left is better for left handed folk)</h3><br>
+			<button onkeyup="leftSide" id="leftside" type="button" value="left" class="btn btn-danger buttons leftside">Left Controls </button>
+			<div class="left">
+				<p>Thanks for playing, the key you need to press to move is A </p>
+				<button onclick=exit() type="button" class="btn btn-danger exit">X</button>
+			</div>
+			<button type="button" value="right" class="btn btn-danger buttons rightside" id="rightside">Right Controls</button>
+			<div class="right">
+				<p>Thanks for playing, the key you need to press to move is L </p>
+				<button onclick=exit() type="button" class="btn btn-danger exit">X</button>
+			</div>
+		</div>
+
+
+		<div class="row resetzone">
+			<h3 class="font">Click here for the countdown to begin, when you see GO press your key to see if you can beat the computer!</h3><br>
+			<button id="go" type="button" class="btn btn-danger gooo">Click here when your ready to start and this will countdown from 3...</button>
+			<p class="countdown three">3</p>
+			<p class="countdown two">2</p>
+			<p class="countdown one">1</p>
+			<p class="countdown go">GO</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="row">
+		<div class="racetrack">
+			<div class="player1" id="Player1"></div>
+
+
+		</div>
+		<div class="racetrack">
+			<div class="player2" id="Player2"></div>
+		</div>
+	</div>
+
+	<div class="row reset blue">
+		<button id="reset" type="button" value="reset" class="btn btn-danger">Reset</button>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="snap.js">
+	</script>
+
+</body></html>

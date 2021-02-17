@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	width: 100%;
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+.transport {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding-top: 2rem;
+	margin-top: -0.6rem;
+	padding-bottom: 2rem;
+}
+
+
+.font {
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Yusei Magic', sans-serif;
+	padding-bottom: 1rem;
+	font-size: 3rem;
+	padding-top: 1rem;
+	margin-top: -0.5rem;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2rem;
+	padding-bottom: 2rem;
+}
+
+.icons {
+	cursor: pointer;
+	background-color: white;
+	width: 125px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	list-style-type: none;
+
+}
+
+i {
+	position: relative;
+	top: 15px;
+}
+
+.fa-ambulance {
+	transform: rotateY(180deg)
+}
+
+.racetrack {
+	width: 95%;
+	border-bottom: 4px dashed black;
+	border-right: 10px dashed red;
+	margin-left: 2em;
+}
+
+#Player1,
+#Player2 {
+	position: relative;
+}
+
+.player1,
+.player2 {
+	position: relative;
+	height: 10rem;
+	width: 10rem;
+	border: 3px solid black;
+}
+
+.noshow {
+	display: none;
+}
+
+.show {
+	display: inline-block
+}
+
+.left,
+.right {
+	border: 1px solid black;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	font-family: 'Indie Flower', cursive;
+	font-size: 26px;
+	display: none;
+	background-color: white
+}
+
+.countdown {
+	text-align: center;
+	font-size: 32px;
+	color: red;
+	display: none;
+}
+
+
+
+
+.buttonarea {
+	text-align: center;
+	margin-top: -0.65rem;
+
+}
+
+.resetzone,
+.reset {
+	text-align: center;
+	padding: 2em;
+}
+
+.blue {
+	background-color: hsl(197, 82%, 56%, 0.8);
+}
